@@ -252,3 +252,32 @@ position: fixed;
 .footer p {
   margin: 4px 0;
 }
+/* Make it responsive */
+.services-container, .cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  flex: 1 1 280px;
+  max-width: 350px;
+  min-width: 260px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 15px 20px;
+  }
+  .nav-links {
+    padding-right: 0;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+  .card {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
